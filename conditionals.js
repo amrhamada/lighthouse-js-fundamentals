@@ -36,3 +36,21 @@ if (temperature < -40 || temperature > 40) {
 if (!raining) {
   console.log("Leave your umbrella at home!");
 }
+
+const whichSchool  = function (age) {
+  if ( age < 13 ){
+    return "Elementry School";
+  }else if ( 13 <= age && age <= 18 ){
+    return "Secondary School";
+  }else {
+    return "Lighthouse Labs"
+  }
+
+}
+
+console.log("I am 35. Which school should I go to?");
+console.log(whichSchool(35));
+console.log("I am 8. Which school should I go to?");
+console.log(whichSchool(8));
+console.log("I am 14. Which school should I go to?");
+console.log(whichSchool(14));
